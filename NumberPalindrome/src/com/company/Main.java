@@ -4,13 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(returnLastDigit(-1234));
-        System.out.println(returnNextToLastDigit(-1234));
+//        System.out.println(returnNextToLastDigit(-1234));
         System.out.println(addDigitToReverse(32, 9));
         System.out.println(isPalindrome(454));
         System.out.println(isPalindrome(2345));
         System.out.println(isPalindrome(45));
         System.out.println(isPalindrome(927282729));
-        System.out.println(isPalindrome(99));
+        System.out.println(isPalindrome(101));
         System.out.println(isPalindrome(-222));
     }
 
