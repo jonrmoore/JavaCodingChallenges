@@ -13,49 +13,22 @@ public class Main {
             return -1;
         }
 
-//        // first iterator
-//        int i = 1;
-//        int j = 1;
-//        if (n1 > n2) {
-//
-//            while (i < n1 && n2 < i) {
-//                int divisor1 = n1 / i;
-//
-//                while (n2 < i) {
-//                    int divisor2 = n2 / i;
-//                    if (divisor1 == divisor2) {
-//
-//                        return divisor1;
-//                    }
-//
-////                    System.out.println("j: " + j);
-////                    j++;
-//                }
-//
-//                System.out.println("i: " + i);
-//                i++;
-//            }
-//
-//        } else if (n1 < n2) {
-//
-//            while (i < n2) {
-//                int divisor1 = n2 / i;
-//
-//                while (n1 > j) {
-//                    int divisor2 = n1 / i;
-//                    if (divisor1 == divisor2) {
-//
-//                        return divisor1;
-//                    }
-//
-//                    j++;
-//                }
-//
-//                i++;
-//            }
-//        }
-//
-//        return -1;
+        for (int i = 1; i < n1; i++) {
+            if ((n1 % i) == 0) {
+                int divisor1 = n1 / i;
+                for (int j = 1; j < n2; j++) {
+                    if ((n2 % j) == 0) {
+                        int divisor2 = n2 / j;
+
+                        if (divisor1 == divisor2) {
+                            return divisor1;
+                        }
+                    }
+                }
+            }
+        }
+
+        return -1;
     }
 
     public static void testDivisbleNum(int num) {
