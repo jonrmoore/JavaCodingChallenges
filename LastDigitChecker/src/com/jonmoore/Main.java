@@ -3,7 +3,7 @@ package com.jonmoore;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	// checks whether at least two numbers share a common last digit
         System.out.println(hasSameLastDigit(9, 99, 999));
         System.out.println(hasSameLastDigit(58, 233, 90));
         System.out.println(hasSameLastDigit(78, 12, 978));
