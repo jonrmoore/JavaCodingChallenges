@@ -6,15 +6,17 @@ public class Main {
 	// write your code here
         printSquareStar(24);
         printSquareStar(2);
+        printSquareStar(5);
     }
 
     public static void printSquareStar(int number) {
         if (number < 5) {
             System.out.println("Invalid Value");
+            return;
         }
 
-        for (int row = 5; row <= number; row++) {
-            for (int col = 5; col <= number; col++) {
+        for (int row = 1; row <= number; row++) {
+            for (int col = 1; col <= number; col++) {
                 if (
                         // Conditions for printing star
                         row == 1
