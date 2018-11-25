@@ -12,7 +12,7 @@ public class Main {
     public static void printSquareStar(int number) {
         if (number < 5) {
             System.out.println("Invalid Value");
-            return;
+            return; // To prevent the code below from being executed
         }
 
         for (int row = 1; row <= number; row++) {
