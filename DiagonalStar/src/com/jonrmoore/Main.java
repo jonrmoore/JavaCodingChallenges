@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         printSquareStar(24);
+        printSquareStar(2);
     }
 
     public static void printSquareStar(int number) {
@@ -12,8 +13,8 @@ public class Main {
             System.out.println("Invalid Value");
         }
 
-        for (int row = 1; row <= number; row++) {
-            for (int col = 1; col <= number; col++) {
+        for (int row = 5; row <= number; row++) {
+            for (int col = 5; col <= number; col++) {
                 if (
                         // Conditions for printing star
                         row == 1
